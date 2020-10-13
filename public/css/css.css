@@ -1,0 +1,597 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@700&display=swap");
+
+body {
+    font-family: Malgun Gothic;
+    background-color: #eaeaea;
+}
+
+header {
+    background: url('/css/img/bg/bg3.png');
+    background-size: cover;
+    background-position-x: right;
+}
+
+.upbar .language {
+    color: white;
+    text-align: right;
+    padding: 5px;
+}
+
+.upbar .language a {
+    font-size: 12px;
+    color: white;
+    padding: 5px;
+}
+
+.home-logo {
+    width: 350px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+
+.ill-title {
+    background-color: #2D2D2D;
+    padding: 30px;
+}
+
+.table {
+    font-size: 12px;
+}
+
+.table-title {
+    color: white; 
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.table-ill {
+    background-color: white;
+    border: 1px solid #dee2e6;
+    border-top: none;
+}
+
+.table-ill thead tr th {
+    border: none;
+    color: white;
+}
+
+.table-ill tbody tr td {
+    font-size: 12px;
+    vertical-align: middle;
+}
+
+#fish-table thead {
+    background-color: #4B4B63
+}
+
+#insect-table thead {
+    background-color: #4B634B;
+}
+
+#seaCreature-table thead {
+    background-color: #4B4B63;
+}
+
+
+.th-sort {
+    cursor: pointer;
+}
+
+.img-back {
+    height: 52px;
+    width: 52px;
+    border-radius: 35px;
+    display: inline-block;
+}
+
+#fish-table .img-back {
+    background-color: #9AD4E4;
+    border: 2px solid #7DBADE;
+}
+
+#insect-table .img-back {
+    background-color: #9BF0B7;
+    border: 2px solid #89CAA2;
+}
+
+#seaCreature-table .img-back {
+    background-color: #9AD4E4;
+    border: 2px solid #7DBADE;
+}
+
+
+.td-month {
+    width: 150px;
+}
+
+.month {
+    text-align: center;
+    font-size: 11px;
+    color: #AAAAAA;
+    box-shadow: 
+        1px 0 0 0 #222, 
+        0 1px 0 0 #222, 
+        1px 1px 0 0 #222,
+        1px 0 0 0 #222 inset, 
+        0 1px 0 0 #222 inset;
+}
+
+.month-active {
+    color: black;
+    font-weight: bold;
+
+}
+#fish-table .month-active {
+    background-color: #89C6E1;
+}
+
+#insect-table .month-active {
+    background-color: #89CAA2
+}
+
+#seaCreature-table .month-active {
+    background-color: #89C6E1;
+}
+
+.sorting_asc {
+    color: blue;
+}
+
+.sorting_desc {
+    color: blue;
+}
+
+
+.creature-tab {
+    margin-bottom: 0px;
+    padding: 0px;
+}
+
+.tab {
+    display: inline-block;
+    width: 70px;
+    background-color: #6c6c6c;
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    color: lightgray;
+}
+
+.tab-fish {
+    display: none;
+}
+
+.tab-seaCreature {
+    display: none;
+}
+
+.tab-active {
+    background-color: #2D2D2D;
+    font-weight: bold;
+    color: white;
+}
+
+.menu {
+    margin: auto;
+    padding: 10px;
+}
+
+.menu-link {
+    display: inline-block;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+
+
+
+
+
+.update-box {
+    border: 1px solid #DDDDDD;
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.update-title {
+    font-size: 22px;
+    font-weight: 900;
+    border-bottom: 1px solid #DDDDDD;
+    padding: 8px;
+    padding-left: 20px; 
+}
+
+.update-contents {
+    padding: 20px;
+    line-height: 1.75;
+}
+
+.side-menu {
+    padding: 0px 15px 7px 15px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 1px 1px 1px 1px #CCCCCC;
+}
+
+.list {
+    list-style-type: none;
+    overflow: hidden;
+    text-align: center;
+    padding: 0px;
+}
+
+.list-header {
+    padding: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.list-item {
+    white-space: nowrap;
+    padding: 10px;
+    height: 40px;
+    font-size: 15px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.list a {
+    color: black;
+    font-size: 15px;
+}
+
+.list-active {
+    background-color: #89CAA2;
+    color: #264F38;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.list-active a {
+    color: #264F38;
+    font-weight: bold;
+}
+
+
+.update-title-input {
+    width: 100%;
+}
+
+.update-contents-input {
+    width: 100%;
+    height: 200px;
+}
+
+.btn-delete {
+    position: absolute;
+    right: 15px;
+    top: 11px;
+    color: white;
+}
+
+.btn-delete-update {
+    position: absolute;
+    padding: 16px;
+    right: 12px;
+    cursor: pointer;
+}
+
+.btn-add-update {
+    margin-top: 10px;
+}
+
+
+
+
+
+.footer {
+    text-align: center;
+}
+
+.login-page {
+    text-align: center;
+}
+
+.login-frame {
+    width: 400px;
+    display: inline-block;
+}
+
+.login-input {
+    margin-top: 10px;
+    height: 50px;
+    font-size: 17px;
+}
+
+
+.post-edit {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    padding: 15px;
+}
+
+.post-header {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+}
+
+.board {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+}
+
+.post-list {
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    display: table;
+}
+
+.post-list-vote {
+    font-size: 12px;
+    width: 80px;
+    vertical-align: middle;
+    display: table-cell;
+    text-align: center;
+}
+.post-list-no {
+    width: 100%;
+}
+
+.post-list-contents {
+    display: table-cell;
+    vertical-align: middle;
+    height: 60px;
+}
+
+.post-list-thumb {
+    display: inline-block;
+    
+    display: table-cell;
+    width: 70px;
+}
+
+.post-list-title {
+    font-size: 18px;
+    color: black;
+}
+
+.post-list-info {
+    color: grey;
+    margin-top: 2px;
+    font-size: 14px;
+    position: relative;
+    float: bottom;
+}
+
+.post-list-contents-category {
+    display: inline-block;
+}
+
+.post-list-contents-date {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.post-list-contents-userid {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+.post-box {
+    background-color: white;
+    border: 1px solid #CCCCCC;
+    margin-bottom: 20px;
+}
+
+.post-header {
+    padding: 30px;
+    border-bottom: 1px solid #CCCCCC;
+    margin-bottom: 0px;
+}
+
+.post-title {
+    font-size: 30px;
+}
+
+.post-info {
+    margin-top: 15px;
+    font-size: 15px;
+    color: gray;
+    font-weight: normal;
+}
+
+.post-info-contents {
+    display: inline-block;
+}
+
+.post-contents {
+    padding: 30px;
+    border-bottom: 1px solid #CCCCCC;
+    color: #515151;
+}
+
+.post-footer {
+    text-align: center;
+    padding: 15px;
+}
+
+.button {
+    border: 1px solid #CCCCCC;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+    width: 100%;
+    font-size: 13px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #E0E0E0;
+}
+
+.button-blue {
+    font-weight: bold;
+    color: #065FD4;
+    border: 1px solid #065FD4;
+}
+
+
+.comment {
+    padding: 15px;
+    padding-bottom: 7px;
+}
+
+.comment-profile {
+    float: left;
+    display: inline-block;
+    margin-right: 8px; 
+}
+
+.comment-header {
+    font-size: 14px;
+}
+
+.comment-contents {
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.comment-footer {
+    font-size: 14px;
+}
+
+.comment-main {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.comment-name {
+    font-weight: bold;
+}
+
+.comment-time {
+    color: #606060;
+}
+
+.profile-picture {
+    display: inline-block;
+}
+
+
+.user-info {
+    padding: 15px;
+    border-bottom: 1px solid #CCCCCC;
+}
+
+.user-info-header {
+    margin-bottom: 10px;
+}
+
+.user-profile {
+    border: 1px solid #AAAAAA;
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+}
+
+.user-header {
+    display: inline-block;
+}
+
+.user-contents {
+    display: inline-block;
+}
+
+.user-button {
+    padding: 3px;
+}
+
+.category-header {
+    font-size: 14px;
+    color: gray;
+    font-weight: bold;
+    padding: 20px 0px 7px 3px;
+}
+
+
+.category-item {
+    color: black;
+    padding: 7px 20px 7px 20px;
+}
+
+.recommand {
+    display: inline-block;
+    width: 100px;
+}
+
+.post-option {
+    padding: 0px 15px 15px 15px;
+    text-align: right;
+}
+
+.post-option-button {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.post-info-item {
+    padding-right: 5px;
+}
+
+.non-first {
+    padding-left: 8px;
+    border-left: 1px solid #cccccc;
+}
+
+.board-header {
+    background-color: white;
+    border: 1px solid #cccccc;
+    margin-bottom: 10px;
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 30px;
+    font-size: 22px;
+}
+
+.pagination {
+    text-align: center;
+    display: inline-block;
+    padding: 5px;
+}
+
+.pagination-item {
+    color: black;
+    display: inline-block;
+    font-size: 20px;
+    width: 30px;
+}
+
+.pagenation-item-active {
+    color: black;
+    border: 1px solid #cccccc;
+    font-size: 20px;
+    width: 30px;
+    font-weight: bold;
+}
+
+.pagination-item-link {
+    color: black;
+}
